@@ -1,2 +1,2 @@
-more text to add to the file
+Now running FilePower2 program, i hope it works
 that's all
