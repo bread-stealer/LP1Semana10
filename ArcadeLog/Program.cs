@@ -4,6 +4,13 @@ using System.IO;
 
 namespace ArcadeLog
 {
+    public class ScoreByNameComparer : IComparer<Score>
+    {
+        public int Compare(Score x, Score y)
+        {
+            return string.Compare(x.Name, y.Name, StringComparison.Ordinal);
+        }
+    }
     public class Program
     {
         // Argumento:
@@ -12,7 +19,15 @@ namespace ArcadeLog
         {
             // Lê o Ficheiro e Cria os Scores
             List<Score> scores = new List<Score>();
-            // CÓDIGO AQUI
+
+            string[] lines = File.ReadAllLines(args[0]);
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(" ");
+                string name = parts[0];
+                int points = int.Parse(parts[1]);
+                scores.Add(new Score(name, points));
+            }
 
             // Ordena os Scores
             // CÓDIGO AQUI
