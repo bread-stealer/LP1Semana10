@@ -1,4 +1,4 @@
-Kronos [Gold]: 7400
-Luna [Bronze]: 3800
-Phantom [Silver]: 6100
-Rex [Bronze]: 520
+Echo [Gold]: 8100
+Kira [Bronze]: 1800
+Nova [Gold]: 9990
+Vex [Silver]: 5200
